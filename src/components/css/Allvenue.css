@@ -1,0 +1,49 @@
+.venue {
+     position: relative;
+     /* border: solid 2px blue; */
+    color: white;
+     margin-top: 5rem;
+     height: fit-content;
+     padding: 2rem;
+     
+     
+
+}
+
+.venue {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 20px;
+     justify-items: center;
+     
+     padding: 16px;
+   }
+   
+   .venue-card {
+     border: 1px solid #905804;
+     border-radius: 8px;
+     overflow: hidden;
+     width: 300px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   }
+   
+   .venue-card-image {
+     width: 100%;
+     
+     height: 200px;
+     object-fit: cover;
+   }
+   
+   .venue-card-name {
+     font-size: 1.5em;
+     margin: 16px 16px  8px;
+     text-align: start;
+     
+   }
+   
+   .venue-card-owner,
+   .venue-card-uuid {
+     margin: 0 16px 8px;
+     text-align: start;
+   }
+   

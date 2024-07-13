@@ -9,6 +9,9 @@ import Registration from './components/authentication/Registration';
 import Chat from "./components/Chat";
 import History from "./components/History";
 import './components/css/Star.css'
+import CreateVenue from './components/CreateVenue';
+import AllVenue from './components/AllVenue';
+import VenueUuid from './components/VenuebyUuid';
 
 function App() {
   return (
@@ -23,6 +26,9 @@ function App() {
         <Route path="/register" element={<Registration />} />
         <Route path="/chat" exact element={<Chat />} />
         <Route path="/history" exact element={<History />} />
+        <Route path="/createVenue" element={<CreateVenue />}/>
+        <Route path="/getAllVenue" element={<AllVenue />}/>
+        <Route path="/getByUuid" element={<VenueUuid />}/>
       </Routes>
     </Router>
   );
