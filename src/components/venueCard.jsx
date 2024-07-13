@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../components/css/venueCard.css'
 
 function VenueCard({ imageUrl, name, owner, uuid }) {
   return (
-     <Link to={`/venue/${uuid}`} className='venue-card-link'>
+     <Link to={`/venue/${uuid}`} className='venue-card-link' style={{textDecoration:'none', color:'white'}}>
     <div className='venue-card'>
       <div style={{width: '100%', height:200}} ><img src={imageUrl} alt={name} className='venue-card-image' /></div>
       <h2 className='venue-card-name'>{name}</h2>

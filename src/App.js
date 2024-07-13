@@ -12,6 +12,7 @@ import './components/css/Star.css'
 import CreateVenue from './components/CreateVenue';
 import AllVenue from './components/AllVenue';
 import VenueUuid from './components/VenuebyUuid';
+import UpdateVenue from './components/UpdateVenue';
 
 function App() {
   return (
@@ -28,7 +29,8 @@ function App() {
         <Route path="/history" exact element={<History />} />
         <Route path="/createVenue" element={<CreateVenue />}/>
         <Route path="/getAllVenue" element={<AllVenue />}/>
-        <Route path="/getByUuid" element={<VenueUuid />}/>
+        <Route path="/venue/:uuid" element={ <VenueUuid />} />
+        <Route path="/updateVenue/:uuid" element={ <UpdateVenue />} />
       </Routes>
     </Router>
   );
